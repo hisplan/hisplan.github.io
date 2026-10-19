@@ -164,16 +164,17 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
 .principle h3 + p { margin-top: 11px; font-size: 13px; line-height: 1.8; color: #9ba68e; }
 .principle-icon { margin-left: auto; color: #b0c19a; font: 20px var(--mono); padding-top: 20px; }
 .join-section { color-scheme: light; background: var(--lime); color: var(--bg); }
-.join-inner { display: grid; grid-template-columns: minmax(0, 1fr) 350px; column-gap: 48px; padding-block: 47px; }
-.join-topline { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; }
+.join-inner { padding-block: 47px; }
+.join-topline { display: flex; justify-content: space-between; align-items: center; }
 .join-topline > .eyebrow { font-size: 10px; letter-spacing: 1.7px; }
 .join-topline > span { font-size: 56px; font-weight: 300; line-height: .8; }
-.join-inner h2 { grid-column: 1; font-size: clamp(34px, 4.4vw, 60px); letter-spacing: -2.3px; margin-top: 27px; line-height: 1.3; }
+.join-heading { display: flex; align-items: center; justify-content: space-between; gap: 48px; margin-top: 27px; }
+.join-inner h2 { flex: 1; min-width: 0; font-size: clamp(34px, 4.4vw, 60px); letter-spacing: -2.3px; line-height: 1.3; }
 .join-inner h2 > span { color: var(--bg); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 9px; }
-.join-bottom { grid-column: 1; border-top: 1px solid rgb(17 19 16 / 27%); padding-top: 28px; margin-top: 42px; }
+.join-bottom { border-top: 1px solid rgb(17 19 16 / 27%); padding-top: 28px; margin-top: 42px; }
 .join-bottom > p { font-size: 13px; line-height: 1.9; color: #3c5121; }
 .join-bottom > p > strong { font-size: 18px; font-weight: 650; color: var(--bg); }
-.join-notice { grid-column: 2; grid-row: 2 / 4; align-self: center; display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 220px; padding: 30px; margin-top: 27px; border: 1px solid var(--bg); background: var(--bg); color: var(--lime); box-shadow: 7px 7px 0 rgb(17 19 16 / 20%); transition: transform .2s, box-shadow .2s; }
+.join-notice { flex: 0 0 350px; display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 220px; padding: 30px; border: 1px solid var(--bg); background: var(--bg); color: var(--lime); box-shadow: 7px 7px 0 rgb(17 19 16 / 20%); transition: transform .2s, box-shadow .2s; }
 .join-notice:hover { transform: translate(-2px, -2px); box-shadow: 10px 10px 0 rgb(17 19 16 / 25%); }
 .join-notice:focus-visible { outline-color: var(--bg); }
 .notice-icon { display: grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; background: var(--lime); color: var(--bg); font-size: 32px; line-height: 1; }
@@ -217,8 +218,8 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
   .principle { gap: 17px; }
   .principle h3 { font-size: 18px; }
   .principle-icon { font-size: 17px; }
-  .join-inner { grid-template-columns: minmax(0, 1fr) 300px; column-gap: 28px; }
-  .join-notice { padding: 25px; gap: 16px; }
+  .join-heading { gap: 28px; }
+  .join-notice { flex-basis: 300px; padding: 25px; gap: 16px; }
 }
 
 @media (max-width: 800px) {
@@ -270,10 +271,10 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
   .principle { padding-block: 26px; gap: 22px; }
   .principle h3 { font-size: 20px; }
   .principle-icon { padding-right: 12px; font-size: 23px; }
-  .join-inner { grid-template-columns: 1fr; }
-  .join-inner h2 { font-size: 41px; }
-  .join-notice { grid-column: 1; grid-row: auto; min-height: 170px; padding: 26px; margin-top: 30px; }
-  .join-notice p { font-size: 26px; }
+  .join-heading { gap: 24px; }
+  .join-inner h2 { font-size: clamp(28px, 5.1vw, 41px); }
+  .join-notice { flex-basis: 240px; min-height: 190px; padding: 22px; }
+  .join-notice p { font-size: 24px; }
   .footer-motto { display: none; }
 }
 
@@ -353,12 +354,13 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
   .join-inner { padding-block: 34px; }
   .join-topline > .eyebrow { font-size: 8px; letter-spacing: 1px; }
   .join-topline > span { font-size: 36px; }
-  .join-inner h2 { font-size: clamp(28px, 7.8vw, 42px); letter-spacing: -1.3px; margin-top: 26px; }
+  .join-heading { flex-direction: column; align-items: stretch; gap: 26px; margin-top: 26px; }
+  .join-inner h2 { font-size: clamp(28px, 7.8vw, 42px); letter-spacing: -1.3px; }
   .join-inner h2 > span { text-underline-offset: 6px; }
   .join-bottom { padding-top: 23px; margin-top: 28px; }
   .join-bottom > p { font-size: 12px; }
   .join-bottom > p > strong { font-size: 17px; }
-  .join-notice { padding: 24px; }
+  .join-notice { flex-basis: auto; min-height: 170px; padding: 24px; }
   .join-notice p { font-size: 24px; }
   .site-footer { padding-block: 30px; gap: 12px; }
   .site-footer .brand { font-size: 18px; }
