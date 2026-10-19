@@ -174,6 +174,8 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
 .join-bottom > p { font-size: 13px; line-height: 1.9; color: #3c5121; }
 .join-bottom > p > strong { font-size: 18px; font-weight: 650; color: var(--bg); }
 .join-notice { display: flex; align-items: center; gap: 17px; padding: 17px 22px; border: 1px solid #6b8b40; background: rgb(17 19 16 / 4%); }
+.join-notice:hover { background: rgb(17 19 16 / 9%); }
+.join-notice:focus-visible { outline-color: var(--bg); }
 .notice-icon { font-size: 26px; line-height: 1; }
 .join-notice p { font-size: 15px; font-weight: 650; }
 .join-notice div > span { display: block; margin-top: 6px; font-size: 11px; color: #354b1b; line-height: 1.6; }
