@@ -51,8 +51,6 @@ h1 > span { color: var(--lime); }
 .button-primary:hover { background: #d5ff93; transform: translateY(-2px); }
 .button > span { font-size: 21px; line-height: 1; }
 .text-link { display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 550; transition: color .2s; }
-.hero-actions > .text-link { color: #b3b9aa; font-size: 12px; }
-.hero-actions > .text-link:hover { color: var(--lime); }
 .hero-host { display: flex; gap: 11px; margin-top: 25px; color: #8e9586; font-size: 12px; }
 .hero-host > span { color: var(--lime); }
 .hero-lab { position: relative; height: 580px; margin-top: 3px; background-image: radial-gradient(#424a36 1px, transparent 1px); background-size: 22px 22px; border: 1px solid #2a3024; overflow: hidden; mask-image: linear-gradient(to bottom, black 90%, transparent); }
@@ -292,7 +290,6 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
   .hero-description { margin-top: 23px; font-size: 13px; }
   .hero-actions { margin-top: 25px; gap: 18px; }
   .button { min-height: 51px; padding-inline: 18px; font-size: 13px; gap: 40px; }
-  .hero-actions > .text-link { font-size: 11px; }
   .hero-host { margin-top: 24px; font-size: 10px; }
   .hero-lab { margin-top: 35px; height: 512px; width: 100%; mask-image: linear-gradient(to bottom, black 95%, transparent); }
   .lab-topline { font-size: 7px; }
