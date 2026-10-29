@@ -250,7 +250,7 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
   .code-toolbar { padding-inline: 8px; gap: 8px; font-size: 7px; }
   .code-status { padding-inline: 8px; font-size: 6px; }
   .hero-bottom { margin-top: 18px; font-size: 8px; letter-spacing: .7px; }
-  .statement-strip > div { min-height: 86px; font-size: 26px; letter-spacing: -1px; gap: 14px; }
+  .statement-strip > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px 14px; min-height: auto; padding-block: 20px; white-space: normal; font-size: 26px; letter-spacing: -1px; }
   .strip-star { font-size: 31px; }
   .section-space { padding-block: 72px; }
   .news-layout { grid-template-columns: 1fr; gap: 33px; margin-top: 34px; }
@@ -312,7 +312,7 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
   .hero-bottom { margin-top: 20px; padding-block: 19px; font-size: 6px; letter-spacing: .5px; }
   .hero-bottom a { gap: 8px; }
   .hero-bottom a > span { font-size: 15px; }
-  .statement-strip > div { width: max-content; gap: 18px; min-height: 74px; margin-left: 20px; font-size: 23px; }
+  .statement-strip > div { gap: 10px 18px; font-size: 23px; }
   .strip-star { font-size: 25px; }
   .section-space { padding-block: 57px; }
   .section-heading { gap: 10px; padding-bottom: 17px; }
