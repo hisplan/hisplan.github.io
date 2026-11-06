@@ -128,23 +128,15 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
 .shift-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 35px; margin-top: 38px; }
 .shift-heading > p { font-size: 14px; color: #a6af9b; line-height: 1.9; padding-bottom: 4px; }
 .comparison { display: grid; grid-template-columns: 1fr 1fr; position: relative; margin-top: 40px; gap: 22px; }
-.comparison-before, .comparison-after { padding: 30px 34px; border: 1px solid #454b3d; }
+.comparison-before, .comparison-after { padding: 22px; border: 1px solid #454b3d; }
+.comparison .small-label { display: block; font-family: inherit; font-size: 16px; font-weight: 650; letter-spacing: -.2px; line-height: 1.5; }
 .comparison-before { background: #191c17; }
-.comparison-before .small-label { color: #9ca58f; }
+.comparison-before .small-label { color: var(--ink); }
 .comparison-after { background: #253018; border-color: #8eaf61; }
 .after-topline { display: flex; gap: 8px; align-items: center; justify-content: space-between; }
 .comparison-after .small-label { color: var(--lime); }
 .tiny-tag { padding: 4px 6px; border: 1px solid #6b874b; color: var(--lime); font: 8px var(--mono); letter-spacing: .4px; }
-.quote-mark { font-family: Georgia, serif; font-size: 60px; line-height: .6; margin-top: 35px; height: 25px; }
-.comparison-before .quote-mark { color: #6f7b61; }
-.comparison-after .quote-mark { color: var(--lime); }
-.comparison p { font-size: clamp(32px, 3.8vw, 50px); letter-spacing: -1.5px; font-weight: 650; line-height: 1.25; margin-top: 9px; }
-.comparison-before p { color: #8f9885; }
-.muted-period { color: #68735d; }
-.comparison-after p { color: var(--ink); }
-.comparison-after p > span { color: var(--lime); }
-.comparison-caption { display: block; font-size: 12px; margin-top: 28px; color: #949f87; }
-.comparison-after .comparison-caption { color: #b9caa4; }
+.comparison-illustration { display: block; width: 100%; height: auto; margin-top: 16px; }
 .comparison-arrow { position: absolute; z-index: 1; left: 50%; top: 50%; display: grid; place-items: center; width: 46px; height: 46px; border: 1px solid #677a52; background: var(--lime); color: var(--bg); transform: translate(-50%, -50%); font-size: 27px; }
 .shift-note { margin-top: 25px; text-align: center; font-size: 13px; color: #9ca68f; }
 .shift-note > strong { font-weight: 500; color: var(--ink); }
@@ -212,7 +204,6 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
   .news-layout { gap: 35px; }
   .camp-layout { gap: 35px; }
   .news-copy > p { font-size: 13px; }
-  .comparison p { font-size: 44px; }
   .principle { gap: 17px; }
   .principle h3 { font-size: 18px; }
   .principle-icon { font-size: 17px; }
@@ -260,10 +251,8 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
   .news-copy > .news-question { margin-top: 21px; }
   .news-figure { max-width: 620px; }
   .shift-heading > p { font-size: 12px; }
-  .comparison-before, .comparison-after { padding: 24px; }
-  .comparison p { font-size: 37px; }
+  .comparison-before, .comparison-after { padding: 14px; }
   .tiny-tag { display: none; }
-  .comparison-caption { font-size: 10px; }
   .camp-layout { grid-template-columns: 1fr; gap: 44px; }
   .camp-intro > h2 { font-size: 39px; }
   .principle { padding-block: 26px; gap: 22px; }
@@ -330,11 +319,8 @@ figcaption > span:last-child { font-family: Pretendard, sans-serif; letter-spaci
   h2 { font-size: 36px; }
   .shift-heading > p { margin-top: 20px; font-size: 13px; }
   .comparison { grid-template-columns: 1fr; margin-top: 25px; gap: 16px; }
-  .comparison-before, .comparison-after { padding: 25px; }
-  .comparison .small-label { font-size: 10px; }
-  .comparison p { font-size: 39px; }
-  .comparison-caption { font-size: 11px; margin-top: 22px; }
-  .quote-mark { font-size: 48px; height: 19px; margin-top: 25px; }
+  .comparison-before, .comparison-after { padding: 16px; }
+  .comparison .small-label { font-size: 15px; }
   .comparison-arrow { top: 50%; left: auto; right: 22px; transform: translateY(-50%) rotate(90deg); width: 40px; height: 40px; font-size: 23px; }
   .tiny-tag { display: block; }
   .shift-note { margin-top: 22px; font-size: 11px; }
